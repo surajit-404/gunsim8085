@@ -1,0 +1,11 @@
+;2's Complement of a 16-bit Number
+
+LXI H, 1234H
+MOV A, H
+CMA
+MOV H, A
+MOV A, L
+CMA
+MOV L, A
+INX H
+HLT

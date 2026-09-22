@@ -1,0 +1,6 @@
+;2's Complement of an 8-bit
+
+MVI A, 25H
+CMA
+ADI 01H
+HLT

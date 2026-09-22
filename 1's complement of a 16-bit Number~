@@ -1,0 +1,8 @@
+LXI H, 1234H
+MOV A, H
+CMA
+MOV H, A
+MOV A, L
+CMA
+MOV L, A
+HLT
