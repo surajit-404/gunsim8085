@@ -1,0 +1,16 @@
+
+;Find the Larger of Two 8-bit Numbers
+
+MVI A, 25H ; Load 25H into A
+MVI B, 35H ; Load 35H into B
+
+CMP B ; A - B (internally)
+JNC A_GREATER ; Jump if No Carry (A >= B)
+
+; B is greater
+MOV A, B ; Move B into A
+HLT
+
+A_GREATER: MVI H,00H
+; A is greater
+HLT
